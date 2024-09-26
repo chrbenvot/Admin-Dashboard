@@ -10,6 +10,7 @@ body{
     display:grid;
     grid-template-columns: 1fr 3.5fr;
     grid-template-rows:1fr  4fr ;
+    margin:0px;
 }
 header{
     display:grid;
@@ -63,4 +64,14 @@ ul {
 .miniIcon{
     width:50px;
     height:50px;
+}
+body li{
+    display:flex;
+    gap:10px;
+}
+#dashFlex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
 }

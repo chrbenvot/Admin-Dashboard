@@ -14,8 +14,8 @@ body{
 }
 header{
     display:grid;
-    grid-template-columns: 3fr 1fr;
-    grid-auto-columns: 2fr 1fr;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1fr 2fr;
     background-color: #f0f9ff;
 }
 main{
@@ -60,6 +60,7 @@ ul {
     grid-column:1 / 3;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3,1fr);
+    gap:20px;
 }
 .miniIcon{
     width:50px;
@@ -74,4 +75,29 @@ body li{
     align-items: center;
     justify-content: center;
     gap:20px;
+}
+#search{
+    grid-column: span 9;
+}
+#notifications{
+    grid-column: span 3;
+    display:flex;
+}
+#user{
+    grid-column: span 8;
+    display: flex;
+}
+#buttons{
+    grid-column: span 4;
+}
+#boxes>div{
+    background-color: #f0fdfa;
+    border-left: #facc15 solid 8px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+}
+#boxes>div>div{
+    align-self: end;
 }
